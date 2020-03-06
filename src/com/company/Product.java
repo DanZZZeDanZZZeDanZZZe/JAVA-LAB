@@ -16,6 +16,32 @@ public abstract class Product implements ProductInterface {
 
     };*/
 
+    public void setName(String name) {
+        try {
+            if (name.length() > 30) {
+                throw new Error("Длинна названия не должна быть больше 30 символов!");
+            }
+            this.name = name;
+        } catch (Error e) {
+            System.out.println(e.getMessage());
+            System.out.println("Присвоена пустая строка");
+            this.name = "";
+        }
+    }
+
+    public void setNumberOfServings(int name) {
+        try {
+            if (numberOfServings > 45) {
+                throw new Error("Кусков не может быть больше 45-ти!");
+            }
+            this.numberOfServings = numberOfServings;
+        } catch (Error e) {
+            System.out.println(e.getMessage());
+            System.out.println("Присвоена еденица");
+            this.numberOfServings = 1;
+        }
+    }
+
     public String getName() {
         return name;
     };

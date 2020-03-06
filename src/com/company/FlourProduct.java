@@ -1,4 +1,16 @@
 package com.company;
 
-public class FlourProduct {
+public class FlourProduct extends Product {
+    FlourProduct(String name, int quantity, int price, int numberOfServings) {
+        productType = "мучное изделие";
+        this.numberOfServings = numberOfServings;
+        setName(name);
+        this.quantity = quantity;
+        this.price = price;
+    }
+
+    public String getQuantity() {
+        String quantity = super.getQuantity();
+        return quantity + " г.";
+    }
 }
