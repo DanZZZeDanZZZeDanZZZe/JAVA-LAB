@@ -10,7 +10,7 @@ public class Drink extends Product {
     }
 
     public String getQuantity() {
-        String quantity = super.getQuantity();
+        String.valueOf(quantity);
         return quantity + " мл.";
     }
 }

@@ -10,7 +10,12 @@ public class FlourProduct extends Product {
     }
 
     public String getQuantity() {
-        String quantity = super.getQuantity();
+        String.valueOf(quantity);
         return quantity + " г.";
     }
+
+   /* public String getQuantity() {
+        String quantity = super.getQuantity();
+        return quantity + " г.";
+    }*/
 }
