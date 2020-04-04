@@ -6,6 +6,8 @@ import java.util.List;
 class SellingAppleJuice extends Thread {
     List<Drink> appleJuiceWarehouse;
 
+
+
     SellingAppleJuice(List<Drink> appleJuiceWarehouse) {
         this.appleJuiceWarehouse = appleJuiceWarehouse;
     }
