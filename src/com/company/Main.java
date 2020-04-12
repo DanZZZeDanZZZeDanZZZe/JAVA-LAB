@@ -28,6 +28,14 @@ public class Main {
             drinkList.add(Juice);
         }
 
+        // drinkList массив обьектов считанных в прошлой лабораторной
+        DynamicArray dynamicArray = new DynamicArray();
+        for(Drink drink : drinkList) {
+            int index = drinkList.indexOf(drink);
+            dynamicArray.push(drink.quantity);
+            System.out.println(index + " элемент массива: " + dynamicArray.getItem(index));
+        }
+        System.out.println("Количество совпадений: " + dynamicArray.findCollisions());
         try(ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("src/files/out.txt")))
         {
             for(Drink drink : drinkList) {

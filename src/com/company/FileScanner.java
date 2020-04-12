@@ -24,17 +24,4 @@ public class FileScanner {
         }
         return buffList;
     }
-
-  /*  public void write(String path) throws FileNotFoundException {
-        FileOutputStream fileOut = new FileOutputStream(path);
-    }
-
-
-        while (fileIn.available() > 0) {
-            int oneByte = fileIn.read();
-            fileOut.write(oneByte);
-        }
-        fileIn.close();
-        fileOut.close();*/
-
 }
