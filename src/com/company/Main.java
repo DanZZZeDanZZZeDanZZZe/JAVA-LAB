@@ -6,7 +6,16 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-      /*  List<Drink> appleJuiceWarehouse = new ArrayList();
+        String fp1 = "butterCookies";
+        String fp2 = "gingerbread";
+
+        Factory factory = new Factory();
+        FlourProduct flourProduct1 =
+                factory.getCurrentFlourProduct(fp1, "печенье",1,1,1);
+        FlourProduct flourProduct2 =
+                factory.getCurrentFlourProduct(fp2, "пряник",1,1,1);
+
+        /*  List<Drink> appleJuiceWarehouse = new ArrayList();
 
         AppleJuiceSupply appleJuiceSupply = new AppleJuiceSupply(appleJuiceWarehouse);
         SellingAppleJuice sellingAppleJuice = new SellingAppleJuice(appleJuiceWarehouse);
