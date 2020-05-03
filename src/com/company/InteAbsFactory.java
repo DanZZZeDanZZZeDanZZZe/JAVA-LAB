@@ -1,4 +1,5 @@
-package PACKAGE_NAME;
+package com.company;
 
 public interface InteAbsFactory {
+    void sayHi();
 }

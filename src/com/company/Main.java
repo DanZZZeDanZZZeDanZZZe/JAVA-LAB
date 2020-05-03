@@ -9,11 +9,11 @@ public class Main {
         String fp1 = "butterCookies";
         String fp2 = "gingerbread";
 
-        Factory factory = new Factory();
+        FlourProductFactory flourProductFactory = new FlourProductFactory();
         FlourProduct flourProduct1 =
-                factory.getCurrentFlourProduct(fp1, "печенье",1,1,1);
+                flourProductFactory.getCurrentFlourProduct(fp1, "печенье",1,1,1);
         FlourProduct flourProduct2 =
-                factory.getCurrentFlourProduct(fp2, "пряник",1,1,1);
+                flourProductFactory.getCurrentFlourProduct(fp2, "пряник",1,1,1);
 
         /*  List<Drink> appleJuiceWarehouse = new ArrayList();
 
@@ -37,6 +37,23 @@ public class Main {
             drinkList.add(Juice);
         }
 
+        HighCostInterface aHigherPrice = (int cost) -> {
+            int count = 0;
+            for ( Drink drink : drinkList ) {
+                if( drink.price > cost ) count++;
+            } return count;
+        };
+
+        System.out.println("Количество напитков дороже 55: " + aHigherPrice.getAHigherPrice(55));
+
+        AbsFactory factoryCreator = new AbsFactory();
+        InteAbsFactory drinkFactory = factoryCreator.getFactory("drink");
+        InteAbsFactory fpFactory = factoryCreator.getFactory("flour product");
+
+        drinkFactory.sayHi();
+        fpFactory.sayHi();
+
+
         // drinkList массив обьектов считанных в прошлой лабораторной
         DynamicArray dynamicArray = new DynamicArray();
         for(Drink drink : drinkList) {
@@ -54,5 +71,7 @@ public class Main {
         catch(Exception ex){
             System.out.println(ex.getMessage());
         }
+
+
     }
 }

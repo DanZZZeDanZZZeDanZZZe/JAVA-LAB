@@ -1,6 +1,6 @@
 package com.company;
 
-public class Factory {
+public class FlourProductFactory implements InteAbsFactory {
     public FlourProduct getCurrentFlourProduct(
             String inputos,
             String name,
@@ -16,5 +16,9 @@ public class Factory {
             flourProduct = new Gingerbread(name, quantity, price, numberOfServings);
         }
         return flourProduct;
+    }
+
+    public void sayHi() {
+        System.out.println("Фабрика мучных изделий!");
     }
 }
