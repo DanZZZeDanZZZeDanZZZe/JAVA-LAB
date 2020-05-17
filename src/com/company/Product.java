@@ -8,14 +8,6 @@ public abstract class Product implements ProductInterface {
     protected int price = 0;
     protected int numberOfServings = 0;
 
-
-   /* float calculatePortionQuantity(int quantity, int numberOfServings) {
-
-    };
-    float calculatePortionPrice(int price, int numberOfServings) {
-
-    };*/
-
     public void setName(String name) {
         try {
             if (name.length() > ProductInterface.maxNameLength) {

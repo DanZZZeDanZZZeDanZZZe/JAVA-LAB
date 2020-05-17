@@ -15,4 +15,8 @@ public class Drink extends Product implements Serializable {
         String.valueOf(quantity);
         return quantity + " мл.";
     }
+
+    public String getType() {
+        return productType;
+    }
 }

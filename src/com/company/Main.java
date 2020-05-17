@@ -53,7 +53,6 @@ public class Main {
         drinkFactory.sayHi();
         fpFactory.sayHi();
 
-
         // drinkList массив обьектов считанных в прошлой лабораторной
         DynamicArray dynamicArray = new DynamicArray();
         for(Drink drink : drinkList) {

@@ -14,8 +14,4 @@ public class FlourProduct extends Product {
         return quantity + " г.";
     }
 
-   /* public String getQuantity() {
-        String quantity = super.getQuantity();
-        return quantity + " г.";
-    }*/
 }
