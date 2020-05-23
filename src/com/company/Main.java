@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        String fp1 = "butterCookies";
+   /*     String fp1 = "butterCookies";
         String fp2 = "gingerbread";
 
         FlourProductFactory flourProductFactory = new FlourProductFactory();
@@ -22,7 +22,7 @@ public class Main {
         appleJuiceSupply.start();
         sellingAppleJuice.start();*/
 
-        List<Drink> drinkList = new ArrayList();
+      /*  List<Drink> drinkList = new ArrayList();
         List<String> stringList = FileScanner.getList("src/files/in.txt");
 
         for(String string : stringList){
@@ -69,8 +69,8 @@ public class Main {
         }
         catch(Exception ex){
             System.out.println(ex.getMessage());
-        }
+        }*/
 
 
     }
-}
+    }
