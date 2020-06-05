@@ -6,6 +6,12 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws IOException {
+        NewOrder order = new NewOrder();
+        Seller seller = new Seller();
+        order.addItem("Vaska");
+        order.addObserver(seller);
+        order.addItem("Anna");
+        order.removeItem("Vaska");
    /*     String fp1 = "butterCookies";
         String fp2 = "gingerbread";
 
